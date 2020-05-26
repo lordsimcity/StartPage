@@ -1,0 +1,101 @@
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+			<title>Start Page Simon</title>
+ 		<link rel="stylesheet" type="text/css" href="css.css">
+	</head>
+  	<body>
+			<section>
+				<div id="particles-js"></div>
+
+			<header>
+				<div>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+							<script>
+								/* Add "https://api.ipify.org?format=json" statement
+									 this will communicate with the ipify servers in
+									 order to retrieve the IP address $.getJSON will
+									 load JSON-encoded data from the server using a
+									 GET HTTP request */
+									 $.getJSON("https://api.ipify.org?format=json",
+									 function(data) {
+										// Setting text of element P with id gfg
+										$("#gfg").html(data.ip);
+									})
+						 </script>
+
+						 <div class="index">
+							 <form  action="https://www.startpage.com/sp/search" method="GET">
+								 <input class="search" type="text" name="q" id="q" autofocus placeholder=" Recherche Privée">
+								 <input class="button" type="submit" value="Go!" id="go">
+							 </form>
+						 </div>
+
+						 <h1 class="s1Title"> Machine :</h1>  <p id="gfg"></p>
+						 <span class="prompt">
+
+									<b class="blinking" id="greeting" ></b>
+								</span>
+					</div>
+				</header>
+
+				<hisoka>
+					<div class="hisoka">
+						<div class="colonne">
+							<img src="https://i.pinimg.com/originals/b8/ef/33/b8ef33ad8b01122afa4356b86c3da90c.jpg">
+
+							<script language="JavaScript" type="text/javascript">
+								function go(){
+								if (document.selecter.select1.options[document.selecter.select1.selectedIndex].value != "none") {
+									location = document.selecter.select1.options[document.selecter.select1.selectedIndex].value
+								}
+							}
+						</script>
+						<script language="JavaScript" type="text/javascript"><!--
+						document.write('<form name="selecter"><select name="select1" size=1>'); //Nombre de choix
+						document.write('<option value=none>Mangas :');
+						document.write('<option value="http://labayscan.com/scans/solo-leveling-scan-100-vf/">Solo Levelling');
+						document.write('<option value="https://www.scan-fr.co/manga/berserk/359/3">Berserk');
+						document.write('<option value="https://www.scan-fr.co/manga/shingeki-no-kyojin/124/46">Shingeki No Kyojin');
+						document.write('<option value="https://www.lirescan.me/one-piece-lecture-en-ligne/">One Piece');
+						document.write('</select>');
+						document.write('<input type="button" value="来る" id="manga" onclick="go()">'); //barre multi
+						document.write('</form>');
+						// end hiding contents
+						// -->
+					</script>
+
+	      </div>
+			</div>
+		</hisoka>
+	</section>
+
+
+	<footer>
+		<div>
+			<a href="https://spotify.com"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/1lEyHQIpDbKL2MDDFHuqja" width="80" height="80" frameborder="0" allowtransparency="true"></iframe>
+		</div>
+
+		<div class="container">
+			<h3 class="s4Title">[FAVORiS] <br/></h3>
+					<a class="" href="https://twitter.com/"><img src="https://www.habitat44.org/wp-content/uploads/2016/02/logo-twitter-habitat44.png"/></a>
+					<a href="https://discordapp.com/"><img src="https://i.imgur.com/CZoASK3.jpg"/></a>
+					<a href="https://facebook.com/"><img src="https://yogalifewestindies.com/wp-content/uploads/2017/09/Facebook-logo.png"/></a>
+					<a href="https://youtube.com/"><img src="https://festival-roc-castel.eu/wp-content/uploads/sites/21/2019/04/logo-youtube-png-rond-2.png"/></a>
+					<a href="https://twitch.com/"><img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c540.png"/></a>
+					<a href="https://github.com/"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/></a>
+			</div>
+
+			<div>
+			  <b id="spanHour"></b><br/>
+				<script type="text/javascript" src="date.js"></script>
+				<p id="weather"> </p>
+			</div>
+
+	</footer>
+
+			<script type="text/javascript" src="particles.js"></script>
+	    <script type="text/javascript" src="app.js"></script>
+	    <script type="text/javascript" src="monscript.js"></script>
+	</body>
+</html>
